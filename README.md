@@ -51,4 +51,4 @@ Or, you can simply clone the repo, and drag the file `Sources/Assert.swift` into
 
 ## Questions or feedback?
 
-Feel free to [open an issue](https://github.com/JohnSundell/Files/issues/new), or find me [@johnsundell on Twitter](https://twitter.com/johnsundell).
+Feel free to [open an issue](https://github.com/JohnSundell/Assert/issues/new), or find me [@johnsundell on Twitter](https://twitter.com/johnsundell).
