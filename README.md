@@ -17,13 +17,13 @@ This repo contains a collection of assertion functions that you can use in your 
 
 Here is what you can currently assert using the functions that `Assert` provides:
 
-#### That an expression threw a given error
+#### That an expression threw a given error:
 
 ```swift
 assert(try myFunction(), throwsError: MyError.anError)
 ```
 
-#### That a closure threw a given error
+#### That a closure threw a given error:
 
 ```swift
 assertErrorThrown(MyError.anError) {
@@ -31,7 +31,7 @@ assertErrorThrown(MyError.anError) {
 }
 ```
 
-#### That a closure didn't throw an error
+#### That a closure didn't throw an error:
 
 ```swift
 assertNoErrorThrown {
