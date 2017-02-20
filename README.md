@@ -49,6 +49,16 @@ You can either use `Assert` through the Swift Package Manager, by adding the fol
 
 Or, you can simply clone the repo, and drag the file `Sources/Assert.swift` into your Xcode project and add it to your test target.
 
+## Contributing
+
+To work on `Assert` in Xcode, first generate an Xcode project through the Swift Package Manager:
+
+```
+$ swift package generate-xcodeproj
+```
+
+Then, make your changes to `Assert.swift`, and submit a pull request with your changes.
+
 ## Questions or feedback?
 
 Feel free to [open an issue](https://github.com/JohnSundell/Assert/issues/new), or find me [@johnsundell on Twitter](https://twitter.com/johnsundell).
