@@ -41,13 +41,23 @@ assertNoErrorThrown {
 
 ## Usage
 
-You can either use `Assert` through the Swift Package Manager, by adding the following `dependency` to your `Package.swift` file:
+#### Swift Package Manager
+
+Add the following `dependency` to your `Package.swift` file:
 
 ```swift
 .Package(url: "https://github.com/johnsundell/assert", majorVersion: 1)
 ```
 
-Or, you can simply clone the repo, and drag the file `Sources/Assert.swift` into your Xcode project and add it to your test target.
+Then, you can import `Assert` in your tests, like this:
+
+```swift
+import Assert
+```
+
+#### Manually
+
+You can also simply clone the repo, and drag the file `Sources/Assert.swift` into your Xcode project and add it to your test target.
 
 ## Contributing
 
