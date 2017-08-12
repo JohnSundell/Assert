@@ -69,3 +69,23 @@ public func assertNoErrorThrown<T>(at file: StaticString = #file, line: UInt = #
         XCTFail("Error thrown: \(error)", file: file, line: line)
     }
 }
+
+/**
+ *  Assert that two objects are the same instance
+ *
+ *  Usage: `assertSameInstance(objectA, objectB)`
+ *
+ *  - parameter file: The file in which the assert should take place (automatically inferred)
+ *  - parameter line: The line number at which the assert should take place (automatically inferred)
+ *  - parameter objectA: The first object to assert against
+ *  - parameter objectB: The second object to assert against
+ */
+public func assertSameInstance<T: AnyObject>(at file: StaticString = #file,
+                                             line: UInt = #line,
+                                             _ objectA: T?,
+                                             _ objectB: T?) {
+    XCTAssertTrue(objectA === objectB,
+                  "Objects \(String(describing: objectA)) & \(String(describing: objectB)) are not the same instance",
+                  file: file,
+                  line: line)
+}
