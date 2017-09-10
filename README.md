@@ -39,6 +39,12 @@ assertNoErrorThrown {
 }
 ```
 
+#### That two objects are the same instance:
+
+```swift
+assertSameInstance(objectA, objectB)
+```
+
 ## Usage
 
 #### Swift Package Manager
@@ -46,7 +52,7 @@ assertNoErrorThrown {
 Add the following `dependency` to your `Package.swift` file:
 
 ```swift
-.Package(url: "https://github.com/johnsundell/assert", majorVersion: 1)
+.package(url: "https://github.com/johnsundell/assert", from: "1.0.0")
 ```
 
 Then, you can import `Assert` in your tests, like this:
